@@ -4,7 +4,7 @@ sequenceDiagram
     participant browser
     participant server
 
-browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: HTML document
     deactivate server
@@ -33,5 +33,5 @@ browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     Server-->>Browser: Created + {"message":"note created"}
     deactivate Server
     
-    Note right of Browser: Отправляет JSON { "content": "here", "date": "2025-07-30T17:44:23.867Z" 
+    Note right of Browser:  Send  JSON { "content": "here", "date": "2025-07-30T17:44:23.867Z" 
 ``` 
